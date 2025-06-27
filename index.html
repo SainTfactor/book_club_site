@@ -83,8 +83,8 @@
             return '<div class="book-wrapper col-lg-3 col-sm-12"><div class="book"><span class="title">' + book.title + '</span><span class="author"><span class="heading">Author:</span>' + book.author + '</span><br /><span class="suggestor"><span class="heading">Suggested by:</span>' + (book.submitter == "" ? "UNKNOWN" : book.submitter ) + '</span></div></div>'
           }
           
-          function load_items(var name) { 
-            fetch("submissions.json")
+          var load_items = function (name) { 
+            fetch(name)
                 .then(response => response.json())
                 .then(data => {
                 	var books = data
