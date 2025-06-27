@@ -47,6 +47,9 @@
                 font-weight: bold;
                 margin-right: 5px;
             }
+            #history_toggle {
+                cursor: pointer;
+            }
         </style>
     </head>
     <body>
@@ -56,6 +59,7 @@
                 <a class="navbar-brand" href="#">Billy's Book Club</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <span id="history_toggle">Show History</span>
                 </div>
             </div>
         </nav>
@@ -78,18 +82,35 @@
           var format_book = function(book) {
             return '<div class="book-wrapper col-lg-3 col-sm-12"><div class="book"><span class="title">' + book.title + '</span><span class="author"><span class="heading">Author:</span>' + book.author + '</span><br /><span class="suggestor"><span class="heading">Suggested by:</span>' + (book.submitter == "" ? "UNKNOWN" : book.submitter ) + '</span></div></div>'
           }
-
-          fetch("submissions.json")
-              .then(response => response.json())
-              .then(data => {
-              	var books = data
-              	book_area = document.getElementById("books");
-              	books.forEach(book => {
-                  book_area.innerHTML += format_book(book)
-                })
-              })
-              .catch(error => console.error('Error:', error))
           
+          function load_items(var name) { 
+            fetch("submissions.json")
+                .then(response => response.json())
+                .then(data => {
+                	var books = data
+                	book_area = document.getElementById("books");
+                  book_area.innerHTML = "";
+                	books.forEach(book => {
+                    book_area.innerHTML += format_book(book)
+                  })
+                })
+                .catch(error => console.error('Error:', error))
+          }
+          load_items("submissions.json")
+          
+          document.getElementById("history_toggle").onclick = function() {
+              var toggle = document.getElementById("history_toggle")
+              if (toggle.innerHTML == "Show History") { 
+                toggle.innerHTML = "Show Submissions"
+                load_items("prior.json")
+                document.getElementById("roll_dice").show()
+              } else {
+                toggle.innerHTML = "Show History"
+                load_items("submissions.json")
+                document.getElementById("roll_dice").hide()
+              }
+          }
+
           document.getElementById("roll_dice").onclick = function() {
               var books = document.querySelectorAll(".book");
               var selection = Math.floor(Math.random() * books.length);
