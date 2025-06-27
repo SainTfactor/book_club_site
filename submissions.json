@@ -42,7 +42,7 @@
   {
     "title": "The Poppy War",
     "author": "R.F. Kuang",
-    "submitter": ""
+    "submitter": "Billy"
   },
   {
     "title": "Garden of the Moon",
@@ -77,7 +77,7 @@
   {
     "title": "Children of Time",
     "author": "Adrian Tchaikovsky",
-    "submitter": ""
+    "submitter": "Billy"
   },
   {
     "title": "The Middling Affliction",
@@ -98,5 +98,27 @@
     "title": "The London Seance Society",
     "author": "Sarah Penner",
     "submitter": ""
+  },
+
+
+  {
+    "title": "Meditations",
+    "author": "Marcus Aurelius",
+    "submitter": "Tom"
+  },
+  {
+    "title": "Jurassic Park",
+    "author": "Michael Crichton",
+    "submitter": "Sean"
+  },
+  {
+    "title": "A City on Mars",
+    "author": "Kelly and Zach Weinersmith",
+    "submitter": "Billy"
+  },
+  {
+    "title": "Service Model",
+    "author" : "Adrian Tchaikovsky",
+    "submitter": "Donny"
   }
 ]
