@@ -107,12 +107,11 @@
               if (toggle.innerHTML == "Show History") { 
                 toggle.innerHTML = "Show Submissions"
                 load_items("prior.json")
-                document.getElementById("roll_dice").style.display = "inline-block"
+                document.getElementById("roll_dice").style.display = "none"
               } else {
                 toggle.innerHTML = "Show History"
                 load_items("submissions.json")
-                document.getElementById("roll_dice").hide()
-                document.getElementById("roll_dice").style.display = "none"
+                document.getElementById("roll_dice").style.display = "inline-block"
               }
           }
 
