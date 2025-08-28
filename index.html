@@ -43,6 +43,9 @@
             .selected {
                 background-color: lightgreen;
             }
+            .maybe {
+                background-color: lightblue;
+            }
             .heading {
                 font-weight: bold;
                 margin-right: 5px;
@@ -115,13 +118,23 @@
               }
           }
 
-          document.getElementById("roll_dice").onclick = function() {
-              var books = document.querySelectorAll(".book");
-              var selection = Math.floor(Math.random() * books.length);
+
+          var set_color = function(books, class_name) {
+              selection = Math.floor(Math.random() * books.length);
               books.forEach(book => {
+                book.classList.remove("maybe")
                 book.classList.remove("selected")
               })
-              books[selection].classList.add("selected")
+              books[selection].classList.add(class_name)
+          }
+
+          document.getElementById("roll_dice").onclick = function() {
+              var books = document.querySelectorAll(".book");
+              for (var i = 0; i < 20; i++){
+                  console.log(i*i*i/2)
+                  setTimeout(set_color, i*i*i/3, books, "maybe")
+              }
+              setTimeout(set_color, 2667, books, "selected")
           }
         </script>
     </body>
