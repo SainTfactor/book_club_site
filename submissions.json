@@ -156,5 +156,15 @@
     "title": "Jayber Crow",
     "author" : "Wendell Berry",
     "submitter": "Sean"
+  },
+  {
+    "title": "The Art of War",
+    "author" : "Sun Tzu",
+    "submitter": "Tom"
+  },
+  {
+    "title": "Dungeon Crawler Carl",
+    "author" : "Matt Dinniman",
+    "submitter": "Artur"
   }
 ]
