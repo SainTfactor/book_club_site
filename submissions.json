@@ -110,11 +110,6 @@
     "submitter": "Billy"
   },
   {
-    "title": "Iron Prince",
-    "author" : "Bryce O'Connor & Luke Chmilenko",
-    "submitter": "Ryan G"
-  },
-  {
     "title": "Path of Destruction",
     "author" : "Drew Karpyshyn",
     "submitter": "Sean"
@@ -166,5 +161,10 @@
     "title": "Dungeon Crawler Carl",
     "author" : "Matt Dinniman",
     "submitter": "Artur"
+  },
+  {
+    "title": "In the Rose Garden of the Martyrs",
+    "author" : "Christopher de Bellaigue",
+    "submitter": "Alexa"
   }
 ]
