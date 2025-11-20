@@ -110,11 +110,6 @@
     "submitter": "Billy"
   },
   {
-    "title": "Path of Destruction",
-    "author" : "Drew Karpyshyn",
-    "submitter": "Sean"
-  },
-  {
     "title": "Dragonflight",
     "author" : "Anne McCaffrey",
     "submitter": "Donny"
@@ -158,5 +153,33 @@
     "title": "In the Rose Garden of the Martyrs",
     "author" : "Christopher de Bellaigue",
     "submitter": "Alexa"
+  },
+
+
+
+  {
+    "title": "Notes on an Execution: A Novel",
+    "author" : "Danya Kukafka",
+    "submitter": "Emily"
+  },
+  {
+    "title": "The Moon is a Harsh Mistress",
+    "author" : "Robert A Heinlein",
+    "submitter": "Sean"
+  },
+  {
+    "title": "Katabasis",
+    "author" : "R.F. Kuang",
+    "submitter": "Billy"
+  },
+  {
+    "title": "My Salty Mary",
+    "author" : "Brodi Ashton, Cynthia Hand, and Jodi Meadows",
+    "submitter": "Larissa"
+  },
+  {
+    "title": "There Is No Antimemetics Division",
+    "author" : "qntm",
+    "submitter": "Ryan G"
   }
 ]
