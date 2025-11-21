@@ -50,9 +50,13 @@
                 font-weight: bold;
                 margin-right: 5px;
             }
-            #history_toggle {
+            .toggle {
                 cursor: pointer;
                 color: white;
+                border: 1px solid white;
+                padding: 0 10px;
+                border-radius: 6px;
+                margin: 0 4px;
             }
             .navbar-collapse {
               justify-content: right;
@@ -66,7 +70,9 @@
                 <a class="navbar-brand" href="#">Billy's Book Club</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <span id="history_toggle">Show History</span>
+                    <span class="toggle" data-toload="submissions.json" data-allowroll id="submissions_toggle">Show Submissions</span>
+                    <span class="toggle" data-toload="submissions.2025.json" id="2025_toggle">2025 Candidates</span>
+                    <span class="toggle" data-toload="prior.json" id="history_toggle">Show History</span>
                 </div>
             </div>
         </nav>
@@ -103,18 +109,32 @@
                 })
                 .catch(error => console.error('Error:', error))
           }
+
+          var hide_item = function (name) {
+            var thing = document.getElementById("navbarSupportedContent").children;
+            for (var i = 0; i < thing.length; i++){
+                if (thing[i].attributes["data-toload"].value == name){
+                  thing[i].style.display = "none";
+                } else {
+                  thing[i].style.display = "";
+                }
+            }
+          }
+
+          hide_item("submissions.json")
           load_items("submissions.json")
           
-          document.getElementById("history_toggle").onclick = function() {
-              var toggle = document.getElementById("history_toggle")
-              if (toggle.innerHTML == "Show History") { 
-                toggle.innerHTML = "Show Submissions"
-                load_items("prior.json")
-                document.getElementById("roll_dice").style.display = "none"
+          document.getElementById("navbarSupportedContent").onclick = function(e) {
+              let name = e.target.attributes["data-toload"].value
+              let rollme = e.target.attributes.hasOwnProperty("data-allowroll")
+
+              hide_item(name)
+              load_items(name)
+
+              if (rollme) {
+                document.getElementById("roll_dice").style.display = ""
               } else {
-                toggle.innerHTML = "Show History"
-                load_items("submissions.json")
-                document.getElementById("roll_dice").style.display = "inline-block"
+                document.getElementById("roll_dice").style.display = "none"
               }
           }
 
