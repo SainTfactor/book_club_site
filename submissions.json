@@ -47,8 +47,8 @@
     "submitter": "Emily"
   },
   {
-    "title": "American Sirens",
-    "author" : "Kevin Hazzard",
+    "title": "Diaspora",
+    "author" : "Greg Egan",
     "submitter": "Billy"
   },
   {
@@ -60,6 +60,26 @@
     "title": "Dragonflight",
     "author" : "Anne McCaffrey",
     "submitter": "Donny"
+  },
+  {
+    "title": "The Long Ships",
+    "author" : "Frans G. Bengtsson (Meyer Translation)",
+    "submitter": "Taylor"
+  },
+  {
+    "title": "Heir to the Empire",
+    "author": "Timothy Zahn",
+    "submitter": "Alexa"
+  },
+  {
+    "title": "Meditations",
+    "author": "Marcus Aurelius",
+    "submitter": "Tom"
+  },
+  {
+    "title": "Upgrade",
+    "author" : "Blake Crouch",
+    "submitter": "Stefan"
   }
 
 ]
