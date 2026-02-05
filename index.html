@@ -138,9 +138,7 @@
               }
           }
 
-
-          var set_color = function(books, class_name) {
-              selection = Math.floor(Math.random() * books.length);
+          var set_color = function(books, selection, class_name) {
               books.forEach(book => {
                 book.classList.remove("maybe")
                 book.classList.remove("selected")
@@ -148,13 +146,62 @@
               books[selection].classList.add(class_name)
           }
 
+          function shuffleArray(my_array) {
+            for (var i = my_array.length - 1; i > 0; i--) {
+              var j = Math.floor(Math.random() * (i + 1));
+              var temp = my_array[i];
+              my_array[i] = my_array[j];
+              my_array[j] = temp;
+            }
+            return my_array
+          }
+
+          var scramble_pick = function(current_tick, total_ticks, books) {
+            selection = Math.floor(Math.random() * books.length);
+            if (current_tick == 0) {
+              set_color(books, selection, "selected")
+            } else {
+              set_color(books, selection, "maybe")
+              timedelay = current_tick > (0.7 * total_ticks) ? 50 : 
+                          current_tick > (0.5 * total_ticks) ? 100 : 
+                          current_tick > (0.3 * total_ticks) ? 200 : 
+                          current_tick > (0.1 * total_ticks) ? 400 : 
+                          current_tick > (0.05 * total_ticks) ? 800 : 1600
+              setTimeout(scramble_pick, timedelay, current_tick - 1, total_ticks, books)
+            }
+          }
+
+          var clear_color = function(book) {
+            book.classList.remove("maybe")
+            book.classList.remove("selected")
+          }
+
+          var reveal_pick = function (books) {
+            books.forEach(book => {
+              book.classList.add("maybe")
+            })
+
+            books = shuffleArray(books)
+
+            for (let i = 0; i < books.length-2; i++) {
+              setTimeout(clear_color, i * 500 + 500, books[i])
+            }
+            console.log(books)
+            setTimeout(set_color, 500 * (books.length - 1), books, books.length - 1, "selected")
+          }
+
+          var roll = function(method) {
+            var books = document.querySelectorAll(".book").entries().map(f => { return f[1] }).toArray();
+            if (method == "scramble") {
+              scramble_pick(20,20,books);
+            } else if (method == "reveal") {
+              reveal_pick(books)
+            }
+          }
+
           document.getElementById("roll_dice").onclick = function() {
-              var books = document.querySelectorAll(".book");
-              for (var i = 0; i < 20; i++){
-                  console.log(i*i*i/2)
-                  setTimeout(set_color, i*i*i/3, books, "maybe")
-              }
-              setTimeout(set_color, 2667, books, "selected")
+            //roll("scramble")   
+            roll("reveal")
           }
         </script>
     </body>
