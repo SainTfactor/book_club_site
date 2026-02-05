@@ -165,8 +165,8 @@
               timedelay = current_tick > (0.7 * total_ticks) ? 50 : 
                           current_tick > (0.5 * total_ticks) ? 100 : 
                           current_tick > (0.3 * total_ticks) ? 200 : 
-                          current_tick > (0.1 * total_ticks) ? 400 : 
-                          current_tick > (0.05 * total_ticks) ? 800 : 1600
+                          current_tick > (0.1 * total_ticks) ? 300 : 
+                          current_tick > (0.025 * total_ticks) ? 600 : 1000
               setTimeout(scramble_pick, timedelay, current_tick - 1, total_ticks, books)
             }
           }
