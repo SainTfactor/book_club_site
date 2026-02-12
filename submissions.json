@@ -30,11 +30,6 @@
     "submitter": "Taylor"
   },
   {
-    "title": "The Design of Everyday Things",
-    "author" : "Don Norman",
-    "submitter": "Ryan G"
-  },
-  {
     "title": "The Memory Police",
     "author" : "Yoko Ogawa",
     "submitter": "Emily"
@@ -73,6 +68,12 @@
     "title": "Upgrade",
     "author" : "Blake Crouch",
     "submitter": "Stefan"
-  }
+  },
 
+
+  {
+    "title": "There Is No Antimemetics Division",
+    "author" : "qntm",
+    "submitter": "Ryan G"
+  }
 ]
