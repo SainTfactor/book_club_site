@@ -105,6 +105,35 @@
     "title": "Watership Down",
     "author": "Richard Adams",
     "submitter": "Sean"
-  }
+  },
 
+
+  {
+    "title": "Barbarian Days: A Surfing Life",
+    "author": "William Finnegan",
+    "submitter": "Taylor"
+  },
+  {
+    "title": "The Diamond Age: Or, A Young Lady's Illustrated Primer",
+    "author": "Neal Stephenson",
+    "submitter": "Tom"
+  }
+,
+  {
+    "title": "Project Hail Mary",
+    "author": "Andy Weir",
+    "submitter": "Billy"
+  }
+,
+  {
+    "title": "Shroud",
+    "author": "Adrian Tchaikovsky",
+    "submitter": "Chip"
+  }
+,
+  {
+    "title": "The Anxious Generation",
+    "author": "Jonathan Haidt",
+    "submitter": "Sean"
+  }
 ]
