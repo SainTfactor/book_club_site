@@ -61,6 +61,11 @@
             .navbar-collapse {
               justify-content: right;
             }
+            @media (min-width: 1400px) {
+              .container {
+                max-width:1800px;
+              }
+            }
         </style>
     </head>
     <body>
@@ -93,7 +98,7 @@
 
         <script>
           var format_book = function(book) {
-            return '<div class="book-wrapper col-lg-3 col-sm-12"><div class="book"><span class="title">' + book.title + '</span><span class="author"><span class="heading">Author:</span>' + book.author + '</span><br /><span class="suggestor"><span class="heading">Suggested by:</span>' + (book.submitter == "" ? "UNKNOWN" : book.submitter ) + '</span></div></div>'
+            return '<div class="book-wrapper col-lg-2 col-md-3 col-sm-12"><div class="book"><span class="title">' + book.title + '</span><span class="author"><span class="heading">Author:</span>' + book.author + '</span><br /><span class="suggestor"><span class="heading">Suggested by:</span>' + (book.submitter == "" ? "UNKNOWN" : book.submitter ) + '</span></div></div>'
           }
           
           var load_items = function (name) { 
