@@ -40,6 +40,11 @@
             }
             .suggestor { 
             }
+            .date{
+                float: right;
+                font-weight: bold;
+                font-style: italic;
+            }
             .selected {
                 background-color: lightgreen;
             }
@@ -98,7 +103,12 @@
 
         <script>
           var format_book = function(book) {
-            return '<div class="book-wrapper col-lg-2 col-md-3 col-sm-12"><div class="book"><span class="title">' + book.title + '</span><span class="author"><span class="heading">Author:</span>' + book.author + '</span><br /><span class="suggestor"><span class="heading">Suggested by:</span>' + (book.submitter == "" ? "UNKNOWN" : book.submitter ) + '</span></div></div>'
+            var format_string = '<div class="book-wrapper col-lg-2 col-md-3 col-sm-12"><div class="book"><span class="title">{{title}}</span><span class="author"><span class="heading">Author:</span>{{author}}</span><br /><span class="suggestor"><span class="heading">Suggested by:</span>{{submitter}}</span><span class="date">{{date}}</span></div></div>';
+            format_string = format_string.replace("{{title}}", book.title);
+            format_string = format_string.replace("{{author}}", book.author);
+            format_string = format_string.replace("{{submitter}}", book.submitter == "" ? "UNKNOWN" : book.submitter);
+            format_string = format_string.replace("{{date}}", "date" in book ? book.date : "");
+            return format_string;
           }
           
           var load_items = function (name) { 

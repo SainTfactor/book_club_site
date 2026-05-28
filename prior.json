@@ -2,126 +2,157 @@
   {
     "title": "Nettle and Bone",
     "author": "T. Kingfisher",
-    "submitter": "Billy"
+    "submitter": "Billy",
+    "date": "5/24"
   },
   {
     "title": "Legends and Lattes",
     "author": "Travis Baldree",
-    "submitter": "Billy"
+    "submitter": "Billy",
+    "date": "6/24"
   },
   {
     "title": "His Majesty's Dragon",
     "author": "Naomi Novik",
-    "submitter": "Billy"
+    "submitter": "Billy",
+    "date": "7/24"
   },
   {
     "title": "Blindsight",
     "author": "Peter Watts",
-    "submitter": "Donny"
+    "submitter": "Donny",
+    "date": "8/24"
   },
   {
     "title": "Theft of Fire",
     "author": "Devon Eriksen",
-    "submitter": "Ryan G"
+    "submitter": "Ryan G",
+    "date": "9/24"
   },
   {
     "title": "Out There Screaming",
     "author": "Jordan Peele, et al",
-    "submitter": "Billy"
+    "submitter": "Billy",
+    "date": "10/24"
   },
   {
     "title": "The Long Way to a Small Angry Planet",
     "author": "Becky Chambers",
-    "submitter": "Billy"
+    "submitter": "Billy",
+    "date": "11/24"
   },
   {
     "title": "A Calamity of Souls",
     "author": "David Baldacci",
-    "submitter": "Stefan"
+    "submitter": "Stefan",
+    "date": "12/24"
   },
   {
     "title": "The Happy Return",
     "author": "C.S. Forester",
-    "submitter": "Ryan G"
+    "submitter": "Ryan G",
+    "date": "1/25"
   },
   {
     "title": "The Blade Itself",
     "author": "Joe Abercrombie",
-    "submitter": "Donny"
+    "submitter": "Donny",
+    "date": "2/25"
   },
   {
     "title": "March Madness #1",
     "author": "Members",
-    "submitter": ""
+    "submitter": "",
+    "date": "3/25"
   },
   {
     "title": "Snow Crash",
     "author": "Neal Stephenson",
-    "submitter": "Billy"
+    "submitter": "Billy",
+    "date": "4/25"
   },
   {
     "title": "Artemis",
     "author": "Andy Weir",
-    "submitter": "Stefan"
+    "submitter": "Stefan",
+    "date": "5/25"
   },
   {
     "title": "Self Made Man",
     "author": "Norah (Ned) Vincent",
-    "submitter": "Ryan G"
+    "submitter": "Ryan G",
+    "date": "6/25"
   },
   {
     "title": "Slow Horses",
     "author": "Mick Herron",
-    "submitter": "Stefan"
+    "submitter": "Stefan",
+    "date": "7/25"
   },
   {
     "title": "The Devils",
     "author": "Joe Abercrombie",
-    "submitter": "Billy"
+    "submitter": "Billy",
+    "date": "8/25"
   },
   {
     "title": "Small Gods",
     "author": "Terry Pratchett",
-    "submitter": "Donny"
+    "submitter": "Donny",
+    "date": "9/25"
   },
   {
     "title": "The Library at Mount Char",
     "author": "Scott Hawkins",
-    "submitter": "Chip"
+    "submitter": "Chip",
+    "date": "10/25"
   },
   {
     "title": "Path of Destruction",
     "author" : "Drew Karpyshyn",
-    "submitter": "Sean"
+    "submitter": "Sean",
+    "date": "11/25"
   },
   {
     "title": "The Moon is a Harsh Mistress",
     "author" : "Robert A Heinlein",
-    "submitter": "Sean"
+    "submitter": "Sean",
+    "date": "12/25"
   },
   {
     "title": "The Unexpected Spy",
     "author" : "Tracy Walder",
-    "submitter": "Emily"
+    "submitter": "Emily",
+    "date": "1/26"
   },
   {
     "title": "In the Rose Garden of the Martyrs",
     "author" : "Christopher de Bellaigue",
-    "submitter": "Alexa"
+    "submitter": "Alexa",
+    "date": "2/26"
   },
   {
     "title": "Leviathan Wakes",
     "author" : "James S. A. Corey",
-    "submitter": "Donny"
+    "submitter": "Donny",
+    "date": "3/26"
   },
   {
     "title": "The Long Ships",
     "author" : "Frans G. Bengtsson (Meyer Translation)",
-    "submitter": "Taylor"
+    "submitter": "Taylor",
+    "date": "4/26"
   },
   {
     "title": "Watership Down",
     "author": "Richard Adams",
-    "submitter": "Sean"
+    "submitter": "Sean",
+    "date": "5/26"
+  },
+  {
+    "title": "There Is No Antimemetics Division",
+    "author" : "qntm",
+    "submitter": "Donny & Ryan G",
+    "date": "6/26"
   }
 ]
