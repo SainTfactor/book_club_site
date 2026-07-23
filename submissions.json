@@ -65,11 +65,6 @@
     "submitter": "Larissa"
   },
   {
-    "title": "A Beginner's Guide To Cooking Meth",
-    "author" : "Dr. Christina Glass, Psy. D.",
-    "submitter": "Reid"
-  },
-  {
     "title": "Scythe",
     "author" : "Neal Shusterman",
     "submitter": "Billy"
@@ -169,22 +164,26 @@
     "author": "Adrian Tchaikovsky",
     "submitter": "Donny"
   },
-
-
-
   {
     "title": "Jade City",
     "author": "Fonda Lee",
     "submitter": "Sean"
   },
   {
-    "title": "Yesteryear",
-    "author": "Caro Claire Burke",
-    "submitter": "Billy"
-  },
-  {
     "title": "Dracula's Guest and Other Weird Stories",
     "author": "Bram Stoker",
     "submitter": "Tom"
+  },
+  {
+    "title": "Bookshops and Bonedust",
+    "author": "Travis Baldree",
+    "submitter": "Larissa"
+  },
+  {
+    "title": "The Buried Giant",
+    "author": "Kazou Ishiguro",
+    "submitter": "Margret"
   }
+
+
 ]
