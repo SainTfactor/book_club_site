@@ -214,9 +214,6 @@
     "author": "Lena Dunham",
     "submitter": "Emily"
   },
-
-
-  
   {
     "title": "Famous Last Word",
     "author": "Gillian McAllister",
@@ -241,8 +238,33 @@
     "title": "Dragon Prince",
     "author" : "Melanie Rawn",
     "submitter": "Sean"
+  },
+
+
+
+  {
+    "title": "Yesteryear",
+    "author": "Caro Claire Burke",
+    "submitter": "Billy"
+  },
+  {
+    "title": "Jayber Crow",
+    "author" : "Wendell Berry",
+    "submitter": "Taylor"
+  },
+  {
+    "title": "Jayber Crow",
+    "author" : "Wendell Berry",
+    "submitter": "Sean"
+  },
+  {
+    "title": "Jayber Crow",
+    "author" : "Wendell Berry",
+    "submitter": "Donny"
+  },
+  {
+    "title": "Alice Isn't Dead",
+    "author" : "Joseph Fink",
+    "submitter": "Arianna"
   }
-
-
-
 ]
